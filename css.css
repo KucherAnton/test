@@ -1,3 +1,87 @@
-body {
+body,
+html {
 	font-family: 'Andada Pro', sans-serif;
+	background: linen;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	font-size: 16px;
+	color: black;
+	width: 100%;
+	height: 100%;
+}
+
+.quiz__frame {
+	width: 480px;
+	height: 720px;
+	border: 0;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.wrapper {
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+
+.main {
+	display: table-cell;
+	align-items: center;
+	vertical-align: middle;
+}
+
+.quiz__head {
+	font-size: 30px;
+	margin: 10px;
+	margin-bottom: 100px;
+}
+
+.head__content {
+	padding: 5px;
+	display: table;
+	text-align: center;
+}
+
+.quiz__body {
+	margin: 10px;
+}
+
+.quiz__footer {
+	position: absolute;
+	display: block;
+	bottom: 0px;
+	width: 100%;
+}
+
+.footer__content {
+	padding: 5px;
+	text-align: center;
+}
+
+.button {
+	cursor: pointer;
+	margin: 2px auto;
+	border: 0;
+	border-radius: 10px;
+	color: white;
+	display: block;
+	font-size: 15pt;
+	padding: 10px 25px;
+	width: 70%;
+	background: #213be2;
+}
+
+.button__wrong {
+	background: #eb6465;
+}
+
+.button__correct {
+	background: #5eb97d;
+}
+
+.button__passive {
+	background: #b3b3b3;
 }
